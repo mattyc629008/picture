@@ -1,0 +1,27 @@
+public class Smartphone {
+    private int batlev =100;
+    Smartphone(){
+
+}
+    
+   public int getBat(){
+   return batlev;
+           
+   }
+   public void getBatteryStatus(){
+       System.out.println("BATTERY LEVEL: "+batlev);
+       
+    }
+   public class Camera{
+   int megapixels = 64;
+   
+   public void takephoto(){
+       System.out.println("TAKEN A PHOTO!!");
+       System.out.println("BATTERY LIFE -5");
+       batlev -= 5;
+
+     
+   }
+   }
+    
+}
